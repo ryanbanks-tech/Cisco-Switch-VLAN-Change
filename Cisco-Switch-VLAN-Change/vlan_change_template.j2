@@ -1,0 +1,8 @@
+{% if admin_mode != 'trunk' -%}
+! Generated Configuration
+interface {{ interface }}
+  switchport access vlan {{ vlan }}
+  switchport voice vlan {{ vader_voice }}
+  no shutdown
+{% endif -%}
+
